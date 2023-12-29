@@ -2,27 +2,38 @@
 <html>
     <head>
         <style>
+            body {
+                padding: 40px;
+            }
             * {
-                font-family: Helvetica;
-                text-align: center;
+                font-family: "Gill Sans"; 
+            }
+
+            .info {
+                padding: 20px 0 100px 0;
             }
             
             h1 {
-                font-weight: 5000;
+                font-size: 60px;
                 color: #4583FF;
-                font-weight: bolder;
+                font-weight: 1000p;
+                margin-bottom: 0px;
             }
             
-            .contact {
+            p.contact, a.contact {
+                margin: 0px;
+                font-family: "courier";
                 font-weight: lighter;
+                color: grey;
             }
             
             .portfolioItem {
-                border: 5px;
-                background-color: #deeffc;
-                padding: 100;
-                margin:100;
+                border: 5px double #0a3611;
+                background-color: #fafafa;
+                padding: 30px;
+                margin: 30px 50px 20px 50px;
                 cursor: pointer;
+                border-radius: 30px;
             }
             
             .link {
@@ -33,40 +44,55 @@
                 left: 0;
                 z-index: 1;
             }
+            
             a:link, a:visited, a:active {
                 text-decoration: none;
                 color: black;
             }
-            a:hover {
+            
+            a:link.contact, a:visited.contact, a:active.contact {
+                color: #4583FF;
+            }
+            
+            a:hover, a:hover.contact {
                 text-decoration: none;
-                color: white;
+                color: #1e4ba6;
             }
         </style>
     </head>
     <body>
         
-        <h1>LIZZY BOARD</h1>
-        <p class="contact">eboard@apple.com</p>
-        <p class="contact">703 261 3190</p>
+        <div class="info">
+            <h1>Lizzy Board</h1>
+            <p class="contact">703-261-3190</p>
+            <p class="contact">eboard@apple.com</p>
+            <a href="resume.pdf" class="contact">resume</a> <p/ class="contact">
+            <a href="https://developer.apple.com/videos/play/wwdc2023/10176/" class="contact">latest wwdc talk</a>
+        </div>
         
+        <h2>About</h2>
+        <p>Hi there! I'm Lizzy and I'm currently working towards becoming a user experience designer. I've been a software engineer for about 5 years, but I'm excited for a change in career. Below are a few projects that I've worked on, including designs from my 2023 DevPubs Design boomerang experience.</p>
+        
+        <h2>Projects</h2>
+
         <div class="portfolioItem">
             <a href="https://www.apple.com/">
-                <h2>Xcode design review tools</h2>
-                <p>Investigating laskjdl kaksldj lak dald lakdjlka djalskd jlaskalsd woiej lkdlk jalksd jalsk.</p>
+                <h2>Xcode design exploration</h2>
+                <p>More information, including project article, available on request.</p>
             </a>
         </div>
         
         <div class="portfolioItem">
             <a href="https://www.apple.com/">
-                <h2>Large Swift overloads exploration</h2>
-                <p>Investigating laskjdl kaksldj lak dald lakdjlka djalskd jlaskalsd woiej lkdlk.</p>
+                <h2>Swift documentation exploration</h2>
+                <p>More information, including project article, available on request.</p>
             </a>
         </div>
         
         <div class="portfolioItem">
             <a href="/fetch.html">
-                <h2>Fetch - Swift Playgrounds content</h2>
-                <p>Created laskjdl kaksldj lak dald lakdjlka djalskd jlaskalsd woiej lkdlk.</p>
+                <h2>Bird Search - Swift Playgrounds content</h2>
+                <p>Created a bite-sized Playgrounds lesson.</p>
             </a>
         </div>
         
