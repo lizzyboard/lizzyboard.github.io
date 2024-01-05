@@ -1,1 +1,122 @@
-bird project description will be here
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            img {
+              width: 100%;
+              margin: auto;
+            }
+            
+            img.centered {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            img.screenshot {
+              width: 24%;
+            }
+            
+            .subtitle {
+                font-style: italic;
+                font-weight: normal;
+                margin-top: 0px;
+                color: grey;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Bird Search</h1>
+        <p class="contact">Swift Playgrounds content</p>
+        
+        <h2>Background</h2>
+
+        <p>Intro sentence or two here. Need to fix phrasing in this section.</p>
+        <p>While looking through Swift Playgrounds content, I found that while the lessons were very clear, the code projects themselves were quite complex. Some apps had dozens of files, most of which were not intended to be touched by students. Students are pointed towards relevant files for each task, but seeing a sidebar with 30+ files can still be intimidating - especially for inexperienced coders.</p>
+
+        <h2>Goals</h2>
+
+        <p>I wanted to create a tiny, bite-sized piece of content specifically for beginner students who aren't comfortable with large code projects. Specifically, I envisioned that all of the app's code will be relevant to the lesson - all code will exist in a single small file and be directly relevant to the lesson tasks.</p>
+
+        <p>While this may sound very limiting, I believed that there is potential for creating engaging and helpful content, even with an extremely simple app!</p>
+
+        <h2>Explorations</h2>
+
+        <p>Not all subjects can necessarily be taught this way - for instance, it would be exceedingly difficult to teach something like framework creation in a one-file project. My first idea was teaching MapKit basics - how to put a map on screen and add a few pins to it. This code is quite easy to approach, but maps are probably not the top priority for early developers.</p>
+       
+        <p>I also explored teaching the Timer class, to create a simple stopwatch app. This is definitely a more beginner topic, and I think there's potential in creating this type of lesson for teaching Timer methods.</p>
+
+        <img src="frameworks.png" alt="brainstorming animals" class-"centered">
+
+        <p>I really liked the idea of mini lesson for randomizer functions. Randomizers can open up some really compelling interactions for the least amount of code complexity, which best fits the goals of this project. But what exactly should get randomized? I wanted the app to involve generating a new random visual, where the student could control what aspects are randomized and how. Animals could be fun to randomize, letting the studente create cute, whimsical characters!</p>
+
+        <img src="animals.jpg" alt="brainstorming animals" class-"centered">
+
+        <p>I decided to keep it simple with birds. Students can control each random element separately using some clever image layering - again, to keep the code as clean and intuitive as possible. No hidden methods, nothing complicated.</p>
+
+        <h2>Process</h2>
+
+        <p>There are many randomizer methods, but this lesson will focus on a few key uses.</p>
+        
+        <img src="types.jpg" alt="brainstorming how to use the different types of randomizers" class-"centered">
+
+        <p>To summarize:</p>
+        <ul>
+            <li><span class="code">Bool.random()</span>- is the bird singing?</li>
+            <li><span class="code">Double.random()</span>- determining the r/g/b values for the bird's feather?</li>
+            <li><span class="code">Array.randomElement()</span>- which season is it?</li>
+            <li>The guidebook's steps will be in this order, as the code complexity increases slightly between tasks</li>
+        </ul>
+
+        <h2>Visual design</h2>
+
+        <p>The visual design aims to make the lesson feel approachable and informal. I accomplished this with very very minimal app UI and simple, doodle-style art. The text and drawings appear as though they were draw with pencil and filled in with watercolor.</p>
+        <img src="visual.png" alt="ink swatches" class="centered">
+
+        
+        <h2>Final design</h2>
+
+        <h3>Initial app state</h3>
+        <img src="base.png" alt="initial app view" class="centered screenshot">
+
+        <h3>Lesson outline</h3>
+        <p>Task group 1: Sing like a bird<p>
+        <ul>
+            <li>On "Find new bird" button tap, set <span class="code">isSinging</span> to a random <span class="code">true</span>/<span class="code">false</span> value</li>
+        </ul>
+        <p>Task group 2: Getting colorful</p>
+        <ul>
+            <li>Create a random color generating function</li>
+            <li>On "Find new bird" button tap, set <span class="code">birdColor</span> to a random color</li>
+        </ul>
+        <p>Task group 3: Don't forget to accessorize</p>
+        <ul>
+            <li>Create a state variable to store the current season</li>
+            <li>On "Find new bird" button tap, set the current <span class="code">season</span> to a random value in the seasons list</li>
+            <li>Add an image overlay based on the current season</li>
+        </ul>
+        <p>Task group 4: Add a final touch</p>
+        <ul>
+            <li>Add a "reset" button that returns to the first bird</li>
+        </ul>
+
+        <h3>Final app state</h3>
+        <p>After students complete the above tasks, they can randomly generate some fun birds, like the ones below!</p>
+        <img src="summer.png" alt="summer bird" class="screenshot">
+        <img src="autumn.png" alt="autumn bird" class="screenshot">
+        <img src="winter.png" alt="winter bird" class="screenshot">
+        <img src="spring.png" alt="spring bird" class="screenshot">
+
+        <p>To view the educational content, download the full Playground below.</p>
+        <ul>
+            <li><a href="Bird_Search_BLANK.zip" class="downloadlink" download>
+                <p class="downloadlink">Bird Search - blank project</p>
+            </a></li>
+            <li><a href="Bird_Search_SOLVED.zip" download>
+                <p class="downloadlink">Bird Search - with completed code</p>
+            </a></li>
+        </ul>
+    </body>
+</html>
