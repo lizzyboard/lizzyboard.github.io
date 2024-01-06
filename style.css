@@ -22,7 +22,6 @@ h1 {
 p.contact, a.contact {
     margin: 0px;
     font-family: "courier";
-    font-weight: lighter;
     color: grey;
 }
 
@@ -63,6 +62,15 @@ a:hover, a:hover.contact {
     color: grey;
 }
 
-.downloadlink {
-    color: #4583FF;
+.blue {
+    margin-bottom: 0px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.back {
+    color: grey;
+    font-family: "courier";
 }
