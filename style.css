@@ -52,7 +52,7 @@ a:link.contact, a:visited.contact, a:active.contact {
     color: #4583FF;
 }
 
-a:hover, a:hover.contact {
+a:hover {
     text-decoration: none;
     color: #1e4ba6;
 }
@@ -63,6 +63,10 @@ a:hover, a:hover.contact {
 }
 
 .blue {
+    color: #144fc7;
+}
+
+.no-margin-bottom {
     margin-bottom: 0px;
 }
 
@@ -73,4 +77,10 @@ a:hover, a:hover.contact {
 .back {
     color: grey;
     font-family: "courier";
+}
+
+.inlineImage {
+    width: 0.8em;
+    height: 0.8em;
+    display: inline;
 }
